@@ -71,7 +71,7 @@ img {
 }
 /* Header */
 .header {
-    background-image: url(../img/banner.jpg);
+    background-image: url(./img/banner.jpg);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ img {
     color: var(--blanco);
     border-radius: 40px;
     text-align: center;
-    padding: 12 px 35px;
+    padding: 12px 35px;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
@@ -208,4 +208,19 @@ img {
     margin-top: 4rem;
 }
 
-/* Continuar con el video de "Creando la pagina nosotros" por el minuto 1:26 */
+/* Sobre nosotros */
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: flex;
+    }
+    .sobre-nosotros__texto
+    .sobre-nosotros__imagen {
+        flex-basis: 50%;
+    }
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: 2fr , 1fr;
+        column-gap: 2rem;
+    }
+}
+
