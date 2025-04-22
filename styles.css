@@ -123,6 +123,11 @@ img {
     font-size: 1.8rem;
     color: var(--blanco);
 }
+.navegacion__enlace:hover {
+    border-radius: 40px;
+    transform: all 0.3s ease;
+    background-color: dimgray;
+}
 @media (min-width: 768px) {
     .contenido-principal {
         display: grid;
@@ -154,6 +159,7 @@ img {
 }
 .boton:hover {
     transform: scale(1.05);
+    background-color: chocolate;
 }
 @media (min-width: 768px) {
     .boton {
