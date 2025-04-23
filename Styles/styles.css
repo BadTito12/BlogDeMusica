@@ -217,16 +217,36 @@ img {
 /* Sobre nosotros */
 @media (min-width: 768px) {
     .sobre-nosotros {
-        display: flex;
-    }
-    .sobre-nosotros__texto
-    .sobre-nosotros__imagen {
-        flex-basis: 50%;
-    }
-    .sobre-nosotros {
         display: grid;
-        grid-template-columns: 2fr , 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+         
+    }
+
+}
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
     }
 }
-
+/* Pagina de cursos */
+.curso :last-of-type {
+    border: none;
+}
+.curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.curso__info {
+    font-weight: normal;
+}
+.curso__label,
+.curso__info {
+    font-size: 2rem;
+}
