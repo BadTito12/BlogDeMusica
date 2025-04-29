@@ -337,3 +337,8 @@ img {
 .campo__field--textarea {
     height: 20rem;
 }
+.input { 
+    background-color: grey;
+    width: 500px;
+    transform: rotate(30deg);
+}
