@@ -56,6 +56,9 @@ h3,
 h4 {
     font-family: var(--fuenteHeading);
     line-height: 1.2;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    font-weight: 700;
 }
 
 h1 {
@@ -76,6 +79,9 @@ h4 {
 
 img {
     max-width: 100%;
+}
+ul {
+    margin-bottom: 0;
 }
 
 /* Utilidades */
@@ -302,43 +308,117 @@ img {
 .curso__info {
     font-size: 2rem;
 }
-
 /* Contacto */
 .contacto-bg {
     background-image: url(../img/contacto.jpg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.mensaje-contacto span {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: var(--fuenteParrafos);
+    margin-top: 2rem;
+    font-weight: 700;
 }
 
 .formulario {
-    background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco con 90% opacidad */
+    margin: -4rem auto 0 auto;
     width: 95%;
-    padding: 5rem;
+    max-width: 700px;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px); /* opcional: desenfoque detrás */
 }
 
+/* Campo general */
 .campo {
     display: flex;
+    align-items: flex-start;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 
+/* Etiquetas */
 .campo__label {
-    flex: 0 0 9rem;
+    flex: 0 0 100px;
     text-align: right;
-    padding-right: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
+/* Inputs y textarea */
 .campo__field {
     flex: 1;
     border: 1px solid var(--gris);
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
 }
 
 .campo__field--textarea {
-    height: 20rem;
+    height: 12rem;
+    resize: vertical;
 }
-.input { 
-    background-color: grey;
-    width: 500px;
-    transform: rotate(30deg);
+
+/* Responsive */
+@media (max-width: 600px) {
+    .campo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .campo__label {
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 1.1rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer h3 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer__copy {
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+    padding-top: 0.5rem;
+}
+.footer__redes i {
+    font-size: 24px;
+    margin-right: 2rem;
 }
