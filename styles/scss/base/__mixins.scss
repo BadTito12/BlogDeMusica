@@ -1,0 +1,26 @@
+@mixin boton-estilo($blanco, $padding: 12px 35px, $font-size: 16px, $font-weight: 500) {
+    display: block;
+    font-family: $fuenteHeading;
+    color: $blanco;
+    border-radius: 40px;
+    text-align: center;
+    padding: $padding;
+    font-size: $font-size;
+    text-transform: uppercase;
+    font-weight: $font-weight;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: chocolate;
+        cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+        font-weight: 700;
+        display: inline-block;
+    }
+}

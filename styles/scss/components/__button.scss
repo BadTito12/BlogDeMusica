@@ -1,0 +1,14 @@
+@use "../base/var";
+@use "../base/mixins";
+
+.boton {
+    @include boton-estilo($secundario)
+}
+
+.boton--primario {
+    background-color: $secundario;
+}
+
+.boton--secundario {
+    background-color: #784d3c;
+}

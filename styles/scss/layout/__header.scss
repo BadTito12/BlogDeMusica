@@ -1,0 +1,66 @@
+@use "../base/var";
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .texto {
+        text-align: center;
+        color: $blanco;
+        margin-top: 5rem;
+    }
+
+    .logo {
+        color: $blanco;
+    }
+
+    .nombre {
+        font-weight: 400;
+    }
+
+    .logo__bold {
+        font-weight: 700;
+    }
+
+    .barra {
+        background-color: rgba(0, 0, 0, 0.6); /* negro al 60% */
+        padding: 2rem;
+        border-radius: 1rem;
+
+        .navegacion__enlace {
+            display: block;
+            text-align: center;
+            font-size: 1.8rem;
+            color: $blanco;
+        }
+
+        .navegacion__enlace:hover {
+            border-radius: 40px;
+            transform: all 0.3s ease;
+            background-color: dimgray;
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .contenido-principal {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                column-gap: 4rem;
+            }
+
+            .navegacion {
+                display: flex;
+                gap: 2rem;
+            }
+
+            .navegacion__enlace {
+                margin-top: 15rem;
+            }
+        }
+    }
+}

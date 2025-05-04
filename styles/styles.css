@@ -2,7 +2,6 @@
 :root {
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
-
     --primario: #784d3c;
     --gris: #e1e1e1;
     --blanco: #ffffff;
@@ -308,6 +307,7 @@ ul {
 .curso__info {
     font-size: 2rem;
 }
+
 /* Contacto */
 .contacto-bg {
     background-image: url(../img/contacto.jpg);
@@ -326,29 +326,15 @@ ul {
     font-weight: 700;
 }
 
-/* Asegura que las imágenes de la galería ocupen todo el ancho del contenedor */
-.card-img-top {
-    width: 100%;
-    height: auto;
-}
-
-/* Asegura que los videos de YouTube sean responsivos */
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
 .formulario {
-    background-color: rgba(255, 255, 255, 0.9); /* Blanco con 90% opacidad */
+    background-color: rgba(255, 255, 255, 0.9);
     margin: -4rem auto 0 auto;
     width: 95%;
     max-width: 700px;
     padding: 4rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    backdrop-filter: blur(5px); /* opcional: desenfoque detrás */
+    backdrop-filter: blur(5px); 
 }
 
 /* Campo general */
