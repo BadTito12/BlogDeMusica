@@ -16,6 +16,7 @@ Este proyecto fue desarrollado con las siguientes herramientas y librerías:
 - [Bootstrap](https://getbootstrap.com/): para el diseño responsivo y estructura del sitio.
 - [Font Awesome](https://fontawesome.com/): para íconos modernos y funcionales.
 - [Google Fonts](https://fonts.google.com/): para mejorar la tipografía y apariencia general.
+- [Animate On Scroll Library](https://michalsnik.github.io/aos/): para efectos al hacer scroll.
 
 ---
 
