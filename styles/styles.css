@@ -151,7 +151,18 @@ ul {
     border-radius: 1rem;
 }
 
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+}
 
+@media (max-width: 991px) {
+    .navegacion {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
 .navegacion__enlace {
     display: block;
     text-align: center;
